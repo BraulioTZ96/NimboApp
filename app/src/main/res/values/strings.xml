@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">NimboApp</string>
+    <string name="nimbo_logo">Nimbo Logo</string>
+    <string name="register">registrarse</string>
+    <string name="start_session">Iniciar sesion</string>
+    <string name="ellipse_image">Ellipse image</string>
+    <string name="nimbo_white_logo">Nimbo white logo</string>
+    <string name="login">Ingresar</string>
+    <string name="email">Correo Electronico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="forgot_password">¿Olvidaste la contraseña?</string>
+    <string name="shopping_fragment">SHOPPING FRAGMENT</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="options_fragment">Options Fragment</string>
+    <string name="main_fragment">Main Fragment</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="full_name">Nombre completo:</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="cellphone">Celular</string>
+    <string name="location">Ubicacion:</string>
+    <string name="country">Pais:</string>
+    <string name="state">Estado</string>
+
+    <string name="password_alert">Password should have at least, 1 capital letter, 1 lower case letter and 1 number with al least a length of 8</string>
+
+    <string-array name="countries">
+        <item>Mexico</item>
+        <item>United Stated</item>
+        <item>Canada</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Estado de Mexico</item>
+        <item>Ciudad de Mexico</item>
+        <item>Queretaro</item>
+        <item>Guanajuato</item>
+        <item>San Luis Potosi</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="check_icon">Check icon</string>
+
+</resources>

@@ -1,0 +1,43 @@
+package com.example.nimboapp.fragments
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.example.nimboapp.databinding.FragmentMainBinding
+
+class MainFragment: Fragment() {
+
+    private var _binding: FragmentMainBinding? = null
+    private val binding get() = _binding!!
+
+    companion object{
+
+        const val PARAM_ONE = "param1"
+
+        fun newInstance(param: Int): MainFragment{
+            val fragment = MainFragment()
+            val bundle = Bundle()
+            bundle.putInt(PARAM_ONE, param)
+            fragment.arguments = bundle
+            return fragment
+        }
+
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        _binding = FragmentMainBinding.inflate(LayoutInflater.from(inflater.context), container, false)
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+}

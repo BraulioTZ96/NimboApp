@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_purpleso_purplesotwo"
+    android:fillViewport="true"
+    tools:context=".fragments.NewProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_user_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ic_outline_photo_camera_32"
+            android:background="@drawable/bg_purple_border_buttons"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/profile_picture"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/textInputLayoutProfile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                style="@style/textInputEditTextProfile"
+                tools:text="nombre completo de una persona"
+                android:hint="@string/full_name"
+                android:autofillHints="name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/textInputLayoutProfile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                style="@style/textInputEditTextProfile"
+                tools:text="correoelectronico@correo.com.mx"
+                android:hint="@string/email"
+                android:autofillHints="emailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/textInputLayoutProfile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                style="@style/textInputEditTextProfile"
+                tools:text="contrasena super buena"
+                android:hint="@string/contrasena"
+                android:autofillHints="password"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/textInputLayoutProfile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_confirm_password"
+                style="@style/textInputEditTextProfile"
+                tools:text="contrasena super buena"
+                android:hint="@string/confirm_password"
+                android:autofillHints="password"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/textInputLayoutProfile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_confirm_cellphone"
+                style="@style/textInputEditTextProfile"
+                tools:text="+52 722 2273 768"
+                android:hint="@string/cellphone"
+                android:autofillHints="phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/textViewProfile"
+            android:text="@string/location"/>
+
+        <TextView
+            style="@style/textViewProfile"
+            android:text="@string/country"/>
+
+        <Spinner
+            android:id="@+id/spinner_country"
+            style="@style/spinnerThemeProfile"
+            android:entries="@array/countries"/>
+
+        <TextView
+            style="@style/textViewProfile"
+            android:text="@string/state"/>
+
+        <Spinner
+            android:id="@+id/spinner_state"
+            style="@style/spinnerThemeProfile"
+            android:entries="@array/states"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bttn_save_profile"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/register"
+            android:textColor="@color/purple_so"
+            android:background="@drawable/bg_purple_border_buttons"/>
+
+    </LinearLayout>
+
+</ScrollView>
